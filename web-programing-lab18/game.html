@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Гра</title>
+  <style>
+    #game-container {
+      text-align: center;
+    }
+
+    #game-title {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    #start-button {
+      font-size: 18px;
+      padding: 10px 20px;
+    }
+
+    #timer {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    #game-board {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .message {
+      font-size: 20px;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+<div id="game-container">
+  <div id="game-title">Назва гри</div>
+  <button id="start-button">Почати гру</button>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+    var gameContainer = $("#game-container");
+    var startButton = $("#start-button");
+
+    startButton.on("click", startGame);
+
+    function startGame() {
+      gameContainer.empty();
+      gameContainer.append('<div id="timer">Час: <span id="countdown">60</span> сек</div>');
+      gameContainer.append('<div id="game-board"></div>');
+      gameContainer.append('<button id="restart-button">Почати з початку</button>');
+
+      var countdownElement = $("#countdown");
+      var restartButton = $("#restart-button");
+      var gameBoard = $("#game-board");
+
+      restartButton.on("click", startGame);
+
+      var selectedNumbers = [];
+      var sequence = 1;
+      var timer = setInterval(countdown, 1000);
+
+      generateGameBoard();
+
+      function countdown() {
+        var countdownValue = parseInt(countdownElement.text());
+        countdownValue--;
+
+        if (countdownValue >= 0) {
+          countdownElement.text(countdownValue);
+        } else {
+          clearInterval(timer);
+          endGame("Час вийшов!");
+        }
+      }
+
+      function generateGameBoard() {
+        var numbers = shuffleArray(createNumberArray());
+
+        for (var i = 0; i < numbers.length; i++) {
+          var numberElement = $('<div class="number">' + numbers[i] + '</div>');
+          $(this).css("background-color", getRandomColor());
+
+          numberElement.on("click", selectNumber);
+
+          gameBoard.append(numberElement);
+        }
+      }
+
+      function selectNumber() {
+        var selectedNumber = parseInt($(this).text());
+
+        if (selectedNumber === sequence) {
+          selectedNumbers.push(selectedNumber);
+          sequence++;
+
+          $(this).css("background-color", getRandomColor());
+
+          if (sequence > 25) {
+            clearInterval(timer);
+            endGame("Ви виграли!");
+          }
+        } else {
+          alert("Не вірна цифра");
+        }
+      }
+
+      function endGame(message) {
+        gameBoard.empty();
+        gameBoard.append('<div class="message">' + message + '</div>');
+        restartButton.css("display", "block");
+      }
+
+      function createNumberArray() {
+        var numbers = [];
+
+        for (var i = 1; i <= 25; i++) {
+          numbers.push(i);
+        }
+
+        return numbers;
+      }
+
+      function shuffleArray(array) {
+        var currentIndex = array.length;
+        var temporaryValue, randomIndex;
+
+        while (0 !== currentIndex) {
+          randomIndex = Math.floor(Math.random() * currentIndex);
+          currentIndex -= 1;
+
+          temporaryValue = array[currentIndex];
+          array[currentIndex] = array[randomIndex];
+          array[randomIndex] = temporaryValue;
+        }
+
+        return array;
+      }
+
+      function getRandomColor() {
+        var letters = "0123456789ABCDEF";
+        var color = "#";
+
+        for (var i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+
+        return color;
+      }
+    }
+  });
+</script>
+</body>
+</html>
