@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Title</title>
+    <meta charset="UTF-8">
+    <link href="register.css" rel="stylesheet">
+</head>
+<body>
+<nav class="menu">
+    <ul>
+        <li class="left"><h1>Мій особистий блог</h1>
+            <h2>Віталій Сухомлин</h2></li>
+        <li class="right"><a href="#"><h3>Вхід</h3></a></li>
+        <li class="right"><a href="SukhomlinLab10-01.html"><h3>Реєстрація</h3></a></li>
+    </ul>
+</nav>
+<table>
+    <div>
+        <p style="margin-top:0pt; margin-bottom:0pt; font-size:21.5pt;"><strong><span style="font-family:Tahoma; color:#76a8be;">Create a Repository</span></strong></p>
+        <p style="margin-top:5.4pt; margin-right:64.8pt; margin-bottom:0pt; font-size:14.5pt;"><span style="font-family:Tahoma; letter-spacing:-0.6pt;">**** scratch -- Create a new local&nbsp;</span><span style="font-family:Tahoma;">repository</span></p>
+        <p style="margin-top:3.6pt; margin-bottom:0pt; font-size:15pt;"><span style="font-family:'Courier New'; letter-spacing:-1pt;">$ *** snit [project name]</span></p>
+        <p style="margin-top:10.8pt; margin-right:43.2pt; margin-bottom:0pt; font-size:15pt;"><span style="font-family:Tahoma; font-size:14.5pt; letter-spacing:-0.35pt;">Download from an existing repository&nbsp;</span></p>
+        <p style="margin-top:10.8pt; margin-right:43.2pt; margin-bottom:0pt; font-size:15pt;"><span style="font-family:'Courier New'; letter-spacing:-1pt;">$ git clone my_url</span></p>
+        <p style="margin-top:27pt; margin-bottom:0pt; text-align:center; font-size:21.5pt;"><strong><span style="font-family:Tahoma; letter-spacing:0.05pt; color:#5a8698;">Observe your Repository</span></strong></p>
+        <p style="margin-top:5.4pt; margin-right:79.2pt; margin-bottom:0pt; font-size:14.5pt;"><span style="font-family:Tahoma; letter-spacing:-0.65pt;">**** new or modified files not yet&nbsp;</span><span style="font-family:Tahoma;">committed</span></p>
+        <p style="margin-top:3.6pt; margin-bottom:0pt; font-size:15pt;"><span style="font-family:'Courier New'; letter-spacing:-1pt;">$ git status</span></p>
+        <p style="margin-top:12.6pt; margin-right:32.4pt; margin-bottom:0pt; line-height:110%; font-size:15pt;"><span style="line-height:110%; font-family:Tahoma; font-size:14.5pt; letter-spacing:-0.55pt;">Show the changes to files *** yet staged&nbsp;</span></p>
+        <p style="margin-top:12.6pt; margin-right:32.4pt; margin-bottom:0pt; line-height:110%; font-size:15pt;"><span style="font-family:'Courier New'; letter-spacing:-1pt;">$ git&nbsp;</span><span style="line-height:110%; font-family:'Times New Roman'; font-size:13.5pt;">cliff</span></p>
+        <p style="margin-top:10.8pt; margin-right:75.6pt; margin-bottom:0pt; font-size:15pt;"><span style="font-family:Tahoma; font-size:14.5pt; letter-spacing:-0.5pt;">Show the changes to ****** files&nbsp;</span></p>
+        <p style="margin-top:10.8pt; margin-right:75.6pt; margin-bottom:0pt; font-size:15pt;"><span style="font-family:'Courier New'; letter-spacing:-1.3pt;">$ git cliff --cached</span></p>
+        <p style="margin-top:14.4pt; margin-right:93.6pt; margin-bottom:0pt; font-size:14.5pt;"><span style="font-family:Tahoma; letter-spacing:-0.65pt;">Show all staged and unstaged&nbsp;</span><span style="font-family:Tahoma; letter-spacing:-0.4pt;">file changes</span></p>
+        <p style="margin-top:0pt; margin-bottom:0pt; font-size:15pt;"><span style="font-family:'Courier New'; letter-spacing:-1.5pt;">$ git cliff HEAD</span></p>
+        <p style="margin-top:0pt; margin-bottom:0pt; text-align:center; line-height:26.45pt;"><br style="clear:both; mso-column-break-before:always;"><strong><span style="font-family:Verdana; font-size:21pt; letter-spacing:-0.3pt; color:#91bd4f;">Working</span></strong><strong><span style="font-family:Verdana; font-size:21pt; letter-spacing:-0.3pt; color:#8fbc4b;">&nbsp;with Branches</span></strong></p>
+        <p style="margin-top:5.4pt; margin-right:129.6pt; margin-bottom:0pt; line-height:19.05pt;"><span style="font-family:Tahoma; font-size:14.5pt; letter-spacing:-0.5pt;">List *** local branches&nbsp;</span></p>
+        <p style="margin-top:5.4pt; margin-right:129.6pt; margin-bottom:0pt; line-height:19.05pt;"><span style="font-family:'Courier New'; font-size:15pt; letter-spacing:-1pt;">$ git branch</span></p>
+        <p style="margin-top:10.8pt; margin-right:50.4pt; margin-bottom:0pt; line-height:19.05pt;"><span style="font-family:Tahoma; font-size:14.5pt; letter-spacing:-0.4pt;">List all branches, local and remote&nbsp;</span></p>
+        <p style="margin-top:10.8pt; margin-right:50.4pt; margin-bottom:0pt; line-height:19.05pt;"><span style="font-family:'Courier New'; font-size:15pt; letter-spacing:-1pt;">$ git branch -av</span></p>
+        <p style="margin-top:12.6pt; margin-right:68.4pt; margin-bottom:0pt; line-height:16.95pt;"><span style="font-family:Tahoma; font-size:14.5pt; letter-spacing:-0.7pt;">Switch to a branch, my_branch,&nbsp;</span><span style="font-family:Tahoma; font-size:14.5pt; letter-spacing:-0.3pt;">and update working directory</span></p>
+        <p style="margin-top:3.6pt; margin-bottom:0pt; line-height:17.1pt;"><span style="font-family:'Courier New'; font-size:15pt; letter-spacing:-1pt;">$ git ******** my branch</span></p>
+        <p style="margin-top:12.6pt; margin-right:18pt; margin-bottom:0pt; line-height:19.05pt;"><span style="font-family:Tahoma; font-size:14.5pt; letter-spacing:-0.45pt;">****** a new branch called new branch&nbsp;</span></p>
+        <p style="margin-top:12.6pt; margin-right:18pt; margin-bottom:0pt; line-height:19.05pt;"><span style="font-family:'Courier New'; font-size:15pt; letter-spacing:-1pt;">$ *** branch new branch</span></p>
+        <p style="margin-top:10.8pt; margin-right:39.6pt; margin-bottom:0pt; line-height:19.3pt;"><span style="font-family:Tahoma; font-size:14.5pt; letter-spacing:-0.45pt;">Delete the branch called my_branch&nbsp;</span></p>
+        <p style="margin-top:10.8pt; margin-right:39.6pt; margin-bottom:0pt; line-height:19.3pt;"><span style="font-family:'Courier New'; font-size:15pt; letter-spacing:-1pt;">$ git branch -d my branch</span></p>
+        <p style="margin-top:12.6pt; margin-right:68.4pt; margin-bottom:0pt; text-align:justify; line-height:19.7pt;"><span style="font-family:Tahoma; font-size:14.5pt; letter-spacing:-0.35pt;">Merge branch_a **** branch_b&nbsp;</span></p>
+        <p style="margin-top:12.6pt; margin-right:68.4pt; margin-bottom:0pt; text-align:justify; line-height:19.7pt;"><span style="font-family:'Courier New'; font-size:15pt; letter-spacing:-1pt;">$ git checkout branch b&nbsp;</span></p>
+        <p style="margin-top:12.6pt; margin-right:68.4pt; margin-bottom:0pt; text-align:justify; line-height:19.7pt;"><span style="font-family:'Courier New'; font-size:15pt; letter-spacing:-1pt;">$ git merge branch_a</span></p>
+        <p style="margin-top:10.8pt; margin-right:115.2pt; margin-bottom:0pt; line-height:19.55pt;"><span style="font-family:Tahoma; font-size:14.5pt; letter-spacing:-0.55pt;">Tag *** current commit&nbsp;</span></p>
+        <p style="margin-top:10.8pt; margin-right:115.2pt; margin-bottom:0pt; line-height:19.55pt;"><span style="font-family:'Courier New'; font-size:15pt; letter-spacing:-1pt;">$ git tag my_tag</span></p>
+        <p style="margin-top:0pt; margin-bottom:0pt; line-height:26.05pt;"><br style="clear:both; mso-column-break-before:always;"><strong><span style="font-family:Verdana; font-size:21.5pt; letter-spacing:-0.5pt; color:#6e9232;">Make a change</span></strong></p>
+        <p style="margin-top:5.4pt; margin-right:64.8pt; margin-bottom:0pt; line-height:19.55pt;"><span style="font-family:Tahoma; font-size:14.5pt; letter-spacing:-0.55pt;">Stages *** file, ready for commit&nbsp;</span></p>
+        <p style="margin-top:5.4pt; margin-right:64.8pt; margin-bottom:0pt; line-height:19.55pt;"><span style="font-family:'Courier New'; font-size:15pt; letter-spacing:-1.2pt;">$ git add [file]</span></p>
+        <p style="margin-top:10.8pt; margin-right:14.4pt; margin-bottom:0pt; line-height:19.3pt;"><span style="font-family:Tahoma; font-size:14.5pt; letter-spacing:-0.5pt;">Stage all changed files, ***** for commit&nbsp;</span></p>
+        <p style="margin-top:10.8pt; margin-right:14.4pt; margin-bottom:0pt; line-height:19.3pt;"><span style="font-family:'Courier New'; font-size:15pt; letter-spacing:-1pt;">$ git add&nbsp;</span></p>
+        <p style="margin-top:10.8pt; margin-right:14.4pt; margin-bottom:0pt; line-height:19.3pt;"><span style="font-family:Tahoma; font-size:14.5pt; letter-spacing:-0.5pt;">Commit all staged files to versioned history&nbsp;</span><br><span style="font-family:'Courier New'; font-size:15pt; letter-spacing:-1.2pt;">$ git ****** -m &quot;commit message&quot;</span></p>
+        <p style="margin-top:10.8pt; margin-bottom:0pt; line-height:17.45pt;"><span style="font-family:Tahoma; font-size:14.5pt; letter-spacing:-0.4pt;">Commit all **** tracked files to</span></p>
+        <p style="margin-top:0pt; margin-bottom:0pt; line-height:16.95pt;"><span style="font-family:Tahoma; font-size:14.5pt; letter-spacing:-0.2pt;">********* history</span></p>
+        <p style="margin-top:3.6pt; margin-bottom:0pt; line-height:17.1pt;"><span style="font-family:'Courier New'; font-size:15pt; letter-spacing:-1.2pt;">$git commit -am &quot;commit message&quot;</span></p>
+        <p style="margin-top:12.6pt; margin-right:28.8pt; margin-bottom:0pt; line-height:18.95pt;"><span style="font-family:Tahoma; font-size:14.5pt; letter-spacing:-0.5pt;">Unstages file, keeping the file changes&nbsp;</span></p>
+        <p style="margin-top:12.6pt; margin-right:28.8pt; margin-bottom:0pt; line-height:18.95pt;"><span style="font-family:Tahoma; font-size:14.5pt; letter-spacing:-0.3pt;">$&nbsp;</span><span style="font-family:'Courier New'; font-size:15pt; letter-spacing:-1.3pt;">git reset [file]</span></p>
+        <p style="margin-top:12.6pt; margin-right:39.6pt; margin-bottom:0pt; line-height:19.3pt;"><span style="font-family:Tahoma; font-size:14.5pt; letter-spacing:-0.5pt;">****** everything to the **** commit&nbsp;</span></p>
+        <p style="margin-top:12.6pt; margin-right:39.6pt; margin-bottom:0pt; line-height:19.3pt;"><span style="font-family:'Courier New'; font-size:15pt; letter-spacing:-1pt;">$ git reset --hard</span></p>
+        <p style="margin-top:0pt; margin-bottom:0pt; font-size:21.5pt;"><br style="clear:both; mso-column-break-before:always;"><strong><span style="font-family:Tahoma; color:#d86d44;">Synchronize</span></strong></p>
+        <p style="margin-top:5.4pt; margin-right:21.6pt; margin-bottom:0pt; font-size:14.5pt;"><span style="font-family:Tahoma; letter-spacing:-0.6pt;">Get *** latest changes from origin&nbsp;</span><span style="font-family:Tahoma;">(no merge)</span></p>
+        <p style="margin-top:3.6pt; margin-bottom:0pt; line-height:85%; font-size:15pt;"><span style="line-height:85%; font-family:Tahoma; font-size:14.5pt;">$&nbsp;</span><span style="font-family:'Courier New'; letter-spacing:-1pt;">*** fetch</span></p>
+        <p style="margin-top:12.6pt; margin-right:10.8pt; margin-bottom:0pt; font-size:14.5pt;"><span style="font-family:Tahoma; letter-spacing:-0.65pt;">Fetch *** ****** changes from origin&nbsp;</span><span style="font-family:Tahoma;">*** merge</span></p>
+        <p style="margin-top:3.6pt; margin-bottom:0pt; font-size:15pt;"><span style="font-family:'Courier New'; letter-spacing:-1pt;">$ *** pull</span></p>
+        <p style="margin-top:14.4pt; margin-right:10.8pt; margin-bottom:0pt; font-size:14.5pt;"><span style="font-family:Tahoma; letter-spacing:-0.65pt;">Fetch the latest changes from origin&nbsp;</span><span style="font-family:Tahoma;">and rebase</span></p>
+        <p style="margin-top:5.4pt; margin-bottom:0pt; font-size:15pt;"><span style="font-family:'Courier New'; letter-spacing:-1pt;">$ *** pull --rebase</span></p>
+        <p style="margin-top:12.6pt; margin-right:36pt; margin-bottom:0pt; line-height:127%; font-size:15pt;"><span style="line-height:127%; font-family:Tahoma; font-size:14.5pt; letter-spacing:-0.45pt;">Push local ******* to the origin&nbsp;</span></p>
+        <p style="margin-top:12.6pt; margin-right:36pt; margin-bottom:0pt; line-height:127%; font-size:15pt;"><span style="font-family:'Courier New'; letter-spacing:-1pt;">$ git push</span></p>
+        <p style="margin-top:14.4pt; margin-bottom:0pt; font-size:23pt;"><strong><span style="font-family:Arial; letter-spacing:-1.2pt; color:#a8552e;">Finally!</span></strong></p>
+        <p style="margin-top:5.4pt; margin-right:61.2pt; margin-bottom:0pt; line-height:126%; font-size:15pt;"><span style="line-height:126%; font-family:Tahoma; font-size:14.5pt; letter-spacing:-0.55pt;">**** in doubt, use git help&nbsp;</span></p>
+        <p style="margin-top:5.4pt; margin-right:61.2pt; margin-bottom:0pt; line-height:126%; font-size:15pt;"><span style="font-family:'Courier New'; letter-spacing:-1pt;">$ *** command --help</span></p>
+        <p style="margin-top:14.4pt; margin-bottom:1.8pt; line-height:111%; font-size:14.5pt;"><span style="font-family:Tahoma; letter-spacing:-0.2pt;">Or visit https://training.github.com/&nbsp;</span><span style="font-family:Tahoma; letter-spacing:-0.4pt;">for ******** GitHub training.</span></p>
+    </div>
+    <p><br style="clear:both; mso-break-type:section-break;"></p>
+    <div>
+        <p style="margin-top:0pt; margin-right:82.8pt; margin-bottom:0pt; font-size:14.5pt;"><span style="font-family:Tahoma; letter-spacing:-0.7pt;">Show *** ******* between two&nbsp;</span><span style="font-family:Tahoma;">commit ids</span></p>
+        <p style="margin-top:3.6pt; margin-bottom:0pt; font-size:15pt;"><span style="font-family:'Courier New'; letter-spacing:-1.6pt;">$ git cliff commits commit2</span></p>
+        <p style="margin-top:12.6pt; margin-right:68.4pt; margin-bottom:0pt; font-size:14.5pt;"><span style="font-family:Tahoma; letter-spacing:-0.6pt;">**** the change dates and authors&nbsp;</span><span style="font-family:Tahoma; letter-spacing:-0.5pt;">for a file</span></p>
+        <p style="margin-top:3.6pt; margin-bottom:0pt; font-size:15pt;"><span style="font-family:'Courier New'; letter-spacing:-1.5pt;">$ git blame [file]</span></p>
+        <p style="margin-top:10.8pt; margin-right:61.2pt; margin-bottom:0pt; font-size:14.5pt;"><span style="font-family:Tahoma; letter-spacing:-0.55pt;">Show the file changes for a commit&nbsp;</span><span style="font-family:Tahoma; letter-spacing:-0.4pt;">id and/or file</span></p>
+        <p style="margin-top:3.6pt; margin-bottom:0pt; font-size:15pt;"><span style="font-family:'Courier New'; letter-spacing:-1.3pt;">$ git show [commit]:[file]</span></p>
+        <p style="margin-top:12.6pt; margin-right:126pt; margin-bottom:0pt; font-size:15pt;"><span style="font-family:Tahoma; font-size:14.5pt; letter-spacing:-0.5pt;">Show **** change history&nbsp;</span></p>
+        <p style="margin-top:12.6pt; margin-right:126pt; margin-bottom:0pt; font-size:15pt;"><span style="font-family:Tahoma; font-size:14.5pt;">$&nbsp;</span><span style="font-family:'Courier New'; letter-spacing:-1pt;">git log</span></p>
+        <p style="margin-top:10.8pt; margin-right:46.8pt; margin-bottom:0pt; font-size:14.5pt;"><span style="font-family:Tahoma; letter-spacing:-0.55pt;">Show ****** history for file/directory&nbsp;</span><span style="font-family:Tahoma; letter-spacing:-0.4pt;">including diffs</span></p>
+        <p style="margin-top:0pt; margin-bottom:0pt; font-size:15pt;"><span style="font-family:Tahoma; font-size:14.5pt; letter-spacing:-0.2pt;">$&nbsp;</span><span style="font-family:'Courier New'; letter-spacing:-1.2pt;">git log -p [file/directory]</span></p>
+    </div>
+</table>
+
+
+<footer>
+    <div>
+        <p><font color="white">@Всі права захищенні</font></P>
+    </div>
+</footer>
+</body>
+</html>
