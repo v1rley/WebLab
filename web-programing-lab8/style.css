@@ -1,0 +1,23 @@
+p {
+    font-size: 18px;
+    font-family: Georgia, serif;
+    line-height: 1.5;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.highlight {
+    background-color: #ffcc00;
+}
