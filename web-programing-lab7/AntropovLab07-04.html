@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+  <meta charset="UTF-8">
+  <title>Форма замовлення на товар</title>
+</head>
+<body>
+<h1>Форма замовлення на товар</h1>
+<form>
+  <label for="bankAccount">Номер банківського рахунку:</label>
+  <input type="text" id="bankAccount" name="bankAccount" required><br><br>
+  <label for="personalId">Особистий номер користувача:</label>
+  <input type="text" id="personalId" name="personalId" required><br><br>
+  <label for="products">Список товарів:</label><br>
+  <input type="checkbox" id="product1" name="products" value="product1">
+  <label for="product1">Макарони</label><br>
+  <input type="checkbox" id="product2" name="products" value="product2">
+  <label for="product2">Хліб</label><br>
+  <input type="checkbox" id="product3" name="products" value="product3">
+  <label for="product3">Молоко</label><br><br>
+  <label for="comments">Коментар:</label><br>
+  <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+  <label for="paymentType">Вид оплати:</label><br>
+  <input type="radio" id="cash" name="paymentType" value="cash">
+  <label for="cash">Готівковий розрахунок</label><br>
+  <input type="radio" id="nonCash" name="paymentType" value="nonCash">
+  <label for="nonCash">Безготівковий розрахунок</label><br><br>
+  <label for="additionalInfo">Додаткова інформація:</label><br>
+  <input type="checkbox" id="balance" name="additionalInfo" value="balance">
+  <label for="balance">Залишки на рахунку</label><br>
+  <input type="checkbox" id="lastPayments" name="additionalInfo" value="lastPayments">
+  <label for="lastPayments">Список останніх виплат</label><br><br>
+  <input type="submit" value="Замовити">
+</form>
+</body>
+</html>

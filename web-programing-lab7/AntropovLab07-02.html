@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+</head>
+<body>
+<h2>Registration</h2>
+<form>
+    <pre>
+    <label>
+        Login:   <input type="text" name="Login" size="25" maxlength="32">
+        Password:<input type="password" name="Password" size="25" maxlength="32">
+        Email:   <input type="email" name="Email" size="25">
+        Ваша стать:
+        <input type="radio" name="pol" value="male">Чоловіча <input type="radio" name="pol" value="female">Жіноча
+    </label>
+    <label>
+        Аватарка <input type="file"  size= "50" >
+        Адреса проживання
+        <TEXTAREA NAME="address" WRAP="hard" COLS="30" ROWS="3">
+
+        Ваша адреса...
+
+        </TEXTAREA>
+
+        Статус
+        <select name="status" size="5">
+	    <option value="1"> USER </option>
+	    <option value="2"> VIP </option>
+	    <option value="3"> PRO </option>
+	    <option value="4"> MODERATOR </option>
+	    <option value="5"> ADMINISTRATOR </option>
+        </select>
+
+        Укажіть Ваші навички:
+        <input type="checkbox" name="skill" value="1" checked> HTML
+        <input type="checkbox" name="skill" value="2"> JavaScript
+        <input type="checkbox" name="skill" value="3"> Perl
+        <input type="checkbox" name="skill" value="4"> XML
+        <input type="checkbox" name="skill" value="5"> FLASH
+
+        <input type="reset" name="name" value="СКАСУВАТИ ВВОД"> <input type="submit" name="subm" value="ВІДПРАВИТИ ДАНІ"> <input type = "button" value = "Показати сьогоднішнє число" onclick="alert(Date());">
+
+    </label>
+
+    </pre>
+</form>
+</body>
+</html>
